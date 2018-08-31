@@ -30,7 +30,7 @@ var defaultNameservers = []string{
 }
 
 // RecursiveNameservers are used to pre-check DNS propagations
-var RecursiveNameservers = getNameservers(defaultResolvConf, defaultNameservers)
+var RecursiveNameservers = defaultNameservers
 
 // DNSTimeout is used to override the default DNS timeout of 10 seconds.
 var DNSTimeout = 10 * time.Second
